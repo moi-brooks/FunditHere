@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FundItHere</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(-45deg, #6a11cb, #2575fc, #43e97b, #38f9d7);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+        }
+        
+        img{
+            height: 80px;
+            width: auto;
+            position: relative;
+        }
+  
+        .highlight{
+            color: #00001c;
+            background-color: rgb(253, 253, 255);
+            border-radius: 10px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        /* Typography */
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+        
+        .button-investor {
+            background-color: #ff6b6b;
+            color: #fff;
+        }
+        
+        .button-investor:hover {
+            background-color: #ff3b3b;
+            transform: scale(1.1);
+        }
+        
+        .button-startup {
+            background-color: #4caf50;
+            color: #fff;
+        }
+        
+        .button-startup:hover {
+            background-color: #388e3c;
+            transform: scale(1.1);
+        }
+        
+        /* Animation for Background */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="Fticker__2_-removebg-preview.png" alt="logo">
+    <h1>Welcome to <span class="highlight">FundItHere</span></h1>
+    <p>Are you an Investor or a Startup?</p>
+    <a href="https://forms.gle/qjTGeueydcPW7MWD7" class="button button-investor">I’m an Investor</a>
+    <a href="https://forms.gle/WpCToVR7RFqquJyFA" class="button button-startup">I’m a Startup</a>
+</div>
+</body>
+</html>
